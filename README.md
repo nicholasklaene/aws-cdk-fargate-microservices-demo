@@ -1,7 +1,7 @@
 # AWS Microservices Demo with CDK and Fargate
 
 <p align="center">
-![Alt text](assets/architecture.png?raw=true "title")
+  <img src="assets/architecture.png?raw=true">
 </p>
   
 ## Requirements
