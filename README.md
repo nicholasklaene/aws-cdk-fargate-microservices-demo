@@ -1,5 +1,7 @@
 # AWS Microservices Demo with CDK and Fargate
 
+![Alt text](assets/architecture.png?raw=true "Title")
+
 ## Requirements
 - Java 11
 - TypeScript
