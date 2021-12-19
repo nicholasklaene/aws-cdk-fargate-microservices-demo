@@ -54,7 +54,9 @@ Run:
 
 Navigate to `/infrastructure/scripts`
 
-Run: `bash ecr-deploy-sh`
+Run: 
+
+`bash ecr-deploy-sh`
 
 - Enter your AWS Credentials and the name of the ECR repository you created
 - When prompted for image id, copy the image ID of the repository with name `aws-fargate-demo/name-service`
@@ -70,6 +72,27 @@ Navigate to `/infrastructure`
 Install dependencies: `npm install`
 
 Deploy infrastructure: `cdk deploy`
+
+
+## Verify Deploy
+
+Run:
+
+`aws elbv2 describe-load-balancers`
+
+Copy the DNS name of the created load balancer
+
+Navigate to:
+
+`DNS_NAME_HERE/hello/nick`
+
+In my case:
+
+`http://awsfa-awsfa-wg458r9ycnd8-2128681189.us-east-1.elb.amazonaws.com/hello/nick`
+
+You should see a JSON response with the following format:
+
+`{"hello":"nick Clinton"}`
 
 
 ## Cleanup
