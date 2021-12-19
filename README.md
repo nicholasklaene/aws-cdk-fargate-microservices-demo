@@ -71,4 +71,11 @@ Install dependencies: `npm install`
 
 Deploy infrastructure: `cdk deploy`
 
+<br/>
+
+## Cleanup
+
+Delete ECR images: `aws ecr batch-delete-image --repository-name aws-fargate-demo --image-ids imageTag=hello-world-service imageTag=name-service`
+
+Delete infrastructure: `cdk destroy`
 
