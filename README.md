@@ -2,9 +2,9 @@
 
 ## About
 
-Simple microservice-based app. 
+Simple AWS microservice-based app.  
 
-Consists of two services:
+Consists of two Spring Boot based services:
 - Name Service
    - GET /name/{some_name}
       - Concatenates {some_name} with the last name of a recent US president 
@@ -18,6 +18,16 @@ Consists of two services:
       - Returns `{ "hello": "some_name some_presidents_last_name" }` 
     - GET /hello/internal/health
       - Health check endpoint for ELB    
+
+## Technology
+
+- AWS
+   - ECS/Fargate
+   - Elastic Load Balancer
+   - CDK (TypeScript) 
+- Java
+   - Spring Boot
+    
 
 ## Architecture
 <p align="center">
