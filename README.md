@@ -1,4 +1,4 @@
-# aws-cdk-fargate-microservices-demo
+# AWS Demo Microservices Architecture with CDK and Fargate
 
 ## Requirements
 - Java 11
