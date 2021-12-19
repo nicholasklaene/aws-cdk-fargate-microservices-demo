@@ -1,5 +1,25 @@
 # AWS Microservices Demo with CDK and Fargate
 
+## About
+
+Simple microservice-based app. 
+
+Consists of two services:
+- Name Service
+   - GET /name/{some_name}
+      - Concatenates {some_name} with the last name of a recent US president 
+      - Returns `{ "name": "some_name some_presidents_last_name" }`   
+   - GET /hello/internal/health
+      - Health check endpoint for ELB    
+      
+- Hello World Service
+    - GET /hello/{some_name}
+      - Uses ELB based service discovery to call name service and says hello to the returned full-name
+      - Returns `{ "hello": "some_name some_presidents_last_name" }` 
+    - GET /hello/internal/health
+      - Health check endpoint for ELB    
+
+## Architecture
 <p align="center">
   <img src="assets/architecture.png?raw=true">
 </p>
