@@ -19,7 +19,7 @@ Navigate to `/infrastructure/scripts`
 
 Run: `bash build-images.sh`
 
-### Verify:
+#### Verify
 
 Open two new terminals:
 
@@ -43,4 +43,4 @@ You should see a JSON response with the following format:
 
 ### Deploy
 
-#### Create 
+
