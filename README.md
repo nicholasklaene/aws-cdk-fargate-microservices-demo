@@ -1,6 +1,6 @@
 # AWS Microservices Demo with CDK and Fargate
 
-![Alt text](assets/architecture.png?raw=true "Title")
+![Alt text](assets/architecture.png?raw=true align="center")
 
 ## Requirements
 - Java 11
