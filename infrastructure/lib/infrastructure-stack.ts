@@ -311,7 +311,6 @@ export class AwsFargateDemoStack extends Stack {
 
     helloWorldServiceContainer.addEnvironment("env", "prod");
 
-    // TODO: explain - may not even need service discovery now!
     helloWorldServiceContainer.addEnvironment(
       "LOAD_BALANCER_DNS",
       httpApiALB.loadBalancerDnsName
