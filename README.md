@@ -75,7 +75,10 @@ Deploy infrastructure: `cdk deploy`
 
 ## Cleanup
 
-Delete ECR images: `aws ecr batch-delete-image --repository-name aws-fargate-demo --image-ids imageTag=hello-world-service imageTag=name-service`
+### Delete ECR images 
 
-Delete infrastructure: `cdk destroy`
+`aws ecr batch-delete-image --repository-name aws-fargate-demo --image-ids imageTag=hello-world-service imageTag=name-service`
 
+### Delete infrastructure
+
+`cdk destroy`
