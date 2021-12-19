@@ -43,4 +43,19 @@ You should see a JSON response with the following format:
 
 ### Deploy
 
+#### Create ECR Repository on AWS for Images
+
+Run: `aws ecr create-repository --repository-name aws-fargate-demo`
+
+#### Push name-service Image to AWS Repository
+
+Navigate to `/infrastructure/scripts`
+
+Run: `bash ecr-deploy-sh`
+
+Enter your AWS Credentials and the name of the ECR repository you created
+
+When prompted for image id, copy the image ID of the repository with name `aws-fargate-demo/name-service`
+
+When prompted for image name, 
 
