@@ -8,6 +8,3 @@ node_modules
 cdk.out
 
 .env
-# Can probably remove
-# TODO: Make a script that takes task id, desired name and deploys to ecr
-deploy-docker-image.sh
