@@ -118,7 +118,7 @@ Copy the DNS name of the created load balancer
 
 Navigate to:
 
-`DNS_NAME_HERE/hello/nick`
+`http://DNS_NAME_GOES_HERE/hello/nick`
 
 In my case:
 
