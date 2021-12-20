@@ -7,7 +7,7 @@ Simple AWS microservice-based app.
 Consists of two Spring Boot based services:
 - Name Service
    - GET /name/{some_name}
-      - Concatenates {some_name} with the last name of a recent US president 
+      - Concatenates {some_name} with the last name of a US president 
       - Returns `{ "name": "some_name some_presidents_last_name" }`   
    - GET /hello/internal/health
       - Health check endpoint for ELB    
